@@ -11,7 +11,8 @@ gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
-gem 'postgres', '~> 0.8.1'
+# gem 'postgres', '~> 0.8.1'
+gem 'pg', '~> 1.1', '>= 1.1.4'
 
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
