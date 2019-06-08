@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title style="color: red">JAGDAMBA ELECTRICALS</title>
+    <%= csrf_meta_tags %>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+  
+  
+
+  <%= image_tag("log.png", :alt => "img", class: "imgr") %>
+  <hr style="height: 50px; width: 3px; background-color: #da251c;">
+  <%= image_tag("dsd.png", :alt => "img", class: "imgq") %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav navbar-brand navbar-link navbar-center">
+      <li class="nav-item nav">
+        
+        <%= link_to "Home", pagers_home_path, :class => current_class?(pagers_home_path), class: "nav-item nav-link" %>
+        
+      </li>
+      <li class="nav-item">
+      <%= link_to "Profile", pagers_profile_path, :class => current_class?(pagers_profile_path), class: "nav-item nav-link" %>
+      </li>
+      <li class="nav-item">
+      <%= link_to "Services", pagers_services_path, :class => current_class?(pagers_services_path), class: "nav-link nav-item" %>
+      </li>
+      <li class="nav-item">
+      <%= link_to "Contact", pagers_contact_path, :class => current_class?(pagers_contact_path), class: "nav-link nav-item" %>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="container-fluid">
+  <%= yield %>
+ </div>
+
+ <footer class="ftr arrow_box">
+
+
+ <div class="row rows justify-content-between text-gray-800">
+     <div class="col-12 cols col-lg-auto">
+         <ul>
+               <span class="letter-spacing-extra font-weight-bold font-size-sm">
+                   <div class="label"><b>7028153991</b></div></span><br>
+
+             <div class="label">ajaykale@gmail.com</div><br>
+             
+          <img class="imgs" src="assets/aj11p.png">
+          </ul>
+          
+     </div>
+     <div class="col-6 col-md-auto">
+    <ul class="ulcontent">  <span class="letter-spacing-extra font-weight-bold font-size-sm">
+        SERVICES
+        </span>
+         <br><br>
+          AngularJS
+         <br><br>
+        Responsive App
+        <br><br>
+          Wordpress<br>
+        <br></ul>
+     </div>
+                    
+     <div class="col-6 col-md-auto">
+          <ul class="ulcontent">  <span class="letter-spacing-extra font-weight-bold font-size-sm">
+              LEARN</span>
+         <br><br>
+          Blog
+         <br><br>
+          Video<br>
+        <br></ul>
+    
+     </div>
+                    
+     <div class="col-6 col-md-auto">
+     
+            <ul class="ulcontent">  <span class="letter-spacing-extra font-weight-bold font-size-sm">
+                COMPONEY
+                </span>
+         <br><br>
+          Team
+         <br><br>
+          How we work<br>
+        <br>
+         Portfolio<br><br>
+         </ul>
+     </div>
+                
+     <div class="col-6 col-md-auto">
+     
+           <ul class="ulcontent">
+                <span class="letter-spacing-extra font-weight-bold font-size-sm">
+                    CONTACT</span>
+         <br><br>
+          Pune
+         <br><br>
+          India<br>
+        <br></ul>
+     </div>
+           
+     <div class="col-6 col-md-auto">
+    
+         <ul class="ulcontent"> <span class="letter-spacing-extra font-weight-bold font-size-sm"> SOCIAL</span>
+         <br><br>
+                <img src="logo/twitter.png" style="height: 16px; width: 16px; margin-left: 5px;">
+          Twitter
+         <br><br>
+                <img src="logo/images.png" style="height: 16px; width: 16px; margin-left: 5px;">
+          LinkedIn<br><br>
+         <img src="logo/facebook_318-136394.jpg" style="height: 16px; width: 16px; margin-left: 5px;">
+               Facebook    
+         <br>
+             <br></ul>
+                        </div>            
+     </div>   
+ </div>
+</footer>
+  </body>
+</html>
