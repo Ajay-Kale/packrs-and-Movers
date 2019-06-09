@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root :to => 'pagers#home'
   resources :pagers
   # get 'about' => 'pagers#about'
-  # get "pagers/home"
+  get "pagers/"
   get "pagers/contact"
   get "pagers/profile"
   get "pagers/services"
