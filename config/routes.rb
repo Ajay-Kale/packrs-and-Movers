@@ -3,9 +3,8 @@ Rails.application.routes.draw do
   # resources :navs
   # root 'pagers#home'
   root :to => 'pagers#home'
-  resources :pagers
   # get 'about' => 'pagers#about'
-  get "pagers/"
+  get "pagers/home"
   get "pagers/contact"
   get "pagers/profile"
   get "pagers/services"
